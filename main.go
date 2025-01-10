@@ -23,7 +23,7 @@ func getProgressFilePath() string {
 		fmt.Println("Error getting user directory:", err)
 		os.Exit(1)
 	}
-	return filepath.Join(homeDir, ".water_bottle_progress.json")
+	return filepath.Join(homeDir, ".watter_bottle_progress.json")
 }
 
 func loadProgress() Progress {
@@ -83,9 +83,7 @@ func displayBottle(goal, current int) {
 		}
 	}
 
-	percentage := (float64(current) / float64(goal)) * 100
 	fmt.Printf("Bottle Progress: [%s]\n", bottle)
-	fmt.Printf("You have drunk %d/%d bottles (%.2f%% of your goal).\n", current, goal, percentage)
 }
 
 func displayHelp() {
