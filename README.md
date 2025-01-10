@@ -4,7 +4,7 @@ This Go-based application helps you track your daily water intake goal by showin
 
 ## Installation
 
-To install the `watter_bottle` application, follow these steps:
+To install the `watter_bottle` with GO application, follow these steps:
 
 1. Ensure you have [Go installed](https://golang.org/doc/install).
 2. Run the following command to install the package:
@@ -12,8 +12,13 @@ To install the `watter_bottle` application, follow these steps:
    ```bash
    go install github.com/MatthewAraujo/bottle_watter@latest
    ```
-
-3. The command `watter_bottle` will now be available globally from the terminal.
+With git:
+1. Ensure you have [Git installed](https://git-scm.com/downloads).
+2. Run the following command to install the package:
+   ```bash
+   git clone https://github.com/MatthewAraujo/watter_bottle.git && cd watter_bottle && ./initial.sh
+   ```
+The command `watter_bottle` will now be available globally from the terminal.
 
 ## Usage
 
