@@ -10,8 +10,9 @@ To install the `watter_bottle` application, follow these steps:
 2. Run the following command to install the package:
 
    ```bash
-   go install github.com/MatthewAraujo/watter_bottle@latest
+   go install github.com/MatthewAraujo/bottle_watter@latest
    ```
+
 3. The command `watter_bottle` will now be available globally from the terminal.
 
 ## Usage
@@ -28,12 +29,14 @@ The application supports a few basic commands to help you track your water intak
 
 1. **Set your goal**:
    To set a goal of drinking 5 bottles of water per day:
+
    ```bash
    watter_bottle set_goal 5
    ```
 
 2. **Track your progress**:
    Increment your progress by one bottle:
+
    ```bash
    watter_bottle drink
    ```
