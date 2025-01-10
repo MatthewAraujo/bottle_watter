@@ -2,6 +2,8 @@
 
 This Go-based application helps you track your daily water intake goal by showing your progress and allowing you to set and update your goal. It saves your progress locally and resets every day.
 
+https://github.com/user-attachments/assets/4c91d26c-ccb6-4059-af0f-b104e6cb161a
+
 ## Installation
 
 To install the `bottle_watter` with GO application, follow these steps:
