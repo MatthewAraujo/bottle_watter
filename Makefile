@@ -1,8 +1,8 @@
 BIN_DIR=bin
 
-LINUX_BINARY=$(BIN_DIR)/watter_bottle-linux-amd64
-DARWIN_BINARY=$(BIN_DIR)/watter_bottle-darwin-amd64
-WINDOWS_BINARY=$(BIN_DIR)/watter_bottle.exe
+LINUX_BINARY=$(BIN_DIR)/bottle_watter-linux-amd64
+DARWIN_BINARY=$(BIN_DIR)/bottle_watter-darwin-amd64
+WINDOWS_BINARY=$(BIN_DIR)/bottle_watter.exe
 
 all: build-linux build-darwin build-windows
 

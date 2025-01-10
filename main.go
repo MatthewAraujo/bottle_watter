@@ -23,7 +23,7 @@ func getProgressFilePath() string {
 		fmt.Println("Error getting user directory:", err)
 		os.Exit(1)
 	}
-	return filepath.Join(homeDir, ".watter_bottle_progress.json")
+	return filepath.Join(homeDir, ".bottle_watter_progress.json")
 }
 
 func loadProgress() Progress {
@@ -87,14 +87,14 @@ func displayBottle(goal, current int) {
 }
 
 func displayHelp() {
-	fmt.Println("Usage: watter_bottle [command] [options]")
+	fmt.Println("Usage: bottle_watter [command] [options]")
 	fmt.Println("\nCommands:")
 	fmt.Println("  --help                    Show this help message")
 	fmt.Println("  set_goal <quantity>        Set a goal for daily watter intake (in number of bottles)")
 	fmt.Println("  drink                      Increment the progress by one bottle")
 	fmt.Println("\nExamples:")
-	fmt.Println("  watter_bottle set_goal 5    Set a goal of drinking 5 bottles of watter per day")
-	fmt.Println("  watter_bottle drink         Increment the progress by one bottle")
+	fmt.Println("  bottle_watter set_goal 5    Set a goal of drinking 5 bottles of watter per day")
+	fmt.Println("  bottle_watter drink         Increment the progress by one bottle")
 	fmt.Println("\nNote: The goal and progress are saved locally and reset at the start of each day.")
 }
 
@@ -109,7 +109,7 @@ func main() {
 	}
 	if len(os.Args) > 1 && os.Args[1] == "set_goal" {
 		if len(os.Args) != 3 {
-			fmt.Println("Usage: watter_bottle set_goal <quantity>")
+			fmt.Println("Usage: bottle_watter set_goal <quantity>")
 			os.Exit(1)
 		}
 		goal, err := strconv.Atoi(os.Args[2])
@@ -127,7 +127,7 @@ func main() {
 	}
 
 	if progress.Goal == 0 {
-		fmt.Println("No goal set. Use 'watter_bottle set_goal <quantity>' to set one.")
+		fmt.Println("No goal set. Use 'bottle_watter set_goal <quantity>' to set one.")
 		return
 	}
 
