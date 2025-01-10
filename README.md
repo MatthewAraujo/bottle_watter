@@ -16,7 +16,7 @@ With git:
 1. Ensure you have [Git installed](https://git-scm.com/downloads).
 2. Run the following command to install the package:
    ```bash
-   git clone https://github.com/MatthewAraujo/watter_bottle.git && cd watter_bottle && ./initial.sh
+   git clone https://github.com/MatthewAraujo/bottle_watter.git && cd bottle_watter && ./initial.sh
    ```
 The command `watter_bottle` will now be available globally from the terminal.
 
