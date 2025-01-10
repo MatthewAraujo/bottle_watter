@@ -103,10 +103,11 @@ func main() {
 
 	resetBottleForTheDay(&progress)
 
-	if len(os.Args) > 1 && os.Args[1] == "--help" && len(os.Args) == 1 {
+	if len(os.Args) > 1 && os.Args[1] == "--help" {
 		displayHelp()
 		return
 	}
+
 	if len(os.Args) > 1 && os.Args[1] == "set_goal" {
 		if len(os.Args) != 3 {
 			fmt.Println("Usage: bottle_watter set_goal <quantity>")
