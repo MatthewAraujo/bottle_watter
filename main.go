@@ -89,7 +89,7 @@ func displayBottle(goal, current int) {
 func displayHelp() {
 	fmt.Println("Usage: bottle_watter [command] [options]")
 	fmt.Println("\nCommands:")
-	fmt.Println("  --help                    Show this help message")
+	fmt.Println("  --help                     Show this help message")
 	fmt.Println("  set_goal <quantity>        Set a goal for daily watter intake (in number of bottles)")
 	fmt.Println("  drink                      Increment the progress by one bottle")
 	fmt.Println("\nExamples:")
@@ -102,6 +102,11 @@ func main() {
 	progress := loadProgress()
 
 	resetBottleForTheDay(&progress)
+
+	if len(os.Args) == 1 {
+		displayHelp()
+		return
+	}
 
 	if len(os.Args) > 1 && os.Args[1] == "--help" {
 		displayHelp()
