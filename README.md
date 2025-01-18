@@ -13,6 +13,15 @@ To install the `bottle_watter` with GO application, follow these steps:
    ```bash
    go install github.com/MatthewAraujo/bottle_watter@latest
    ```
+This installs a go binary that will automatically bind to your $GOPATH
+
+> if you’re using Zsh, you’ll need to add it manually to `~/.zshrc`.
+
+don't forget to update
+
+```bash
+source ~/.zshrc
+```
 
 The command `bottle_watter` will now be available globally from the terminal.
 
@@ -62,3 +71,6 @@ You have drunk 3/5 bottles (60.00% of your goal).
 - The goal and progress are saved locally in the file `.bottle_watter_progress.json` in your home directory.
 - The progress is reset at the start of each day.
 - If you don’t set a goal, the program will prompt you to set one.
+
+### Disclaimer
+- If this is not working you have to set the GO PATH in you bash ou zshrc
