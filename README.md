@@ -16,6 +16,9 @@ To install the `bottle_watter` with GO application, follow these steps:
 This installs a go binary that will automatically bind to your $GOPATH
 
 > if you’re using Zsh, you’ll need to add it manually to `~/.zshrc`.
+```bash
+GOPATH=$HOME/go  PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+```
 
 don't forget to update
 
